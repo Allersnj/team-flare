@@ -5,17 +5,6 @@
 
 
 
-
-
-/*
-TODO:
-
-    actually figure out how to make the list happen
-
-*/
-
-
-
 Listbox::Listbox(const wxString& title)
     : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(270, 200))
 {
@@ -30,7 +19,6 @@ Listbox::Listbox(const wxString& title)
     joblistpanel = new jobListPanel(panel);
 
     wxFlexGridSizer* jobInfoRowsSizer = new wxFlexGridSizer(3, 1, 10, 0);
-    //wxFlexGridSizer(int rows, int cols, int vgap, int hgap)
 
     wxStaticText* jobTitle = new wxStaticText(panel, -1, wxT("Project Manager"));
     wxStaticText* jobTraitsTitle = new wxStaticText(panel, -1, "Job Traits:");
@@ -77,31 +65,18 @@ jobListPanel::jobListPanel(wxPanel* parent)
     m_lb = lb->listbox;
 
 
-    m_lb->Append("blah");
-    m_lb->Append("blah");
-    m_lb->Append("blah");
-    m_lb->Append("blah");
-    m_lb->Append("blah");
-    m_lb->Append("blah");
-
-    //wxString lucia = "text";
-
-    //wxArrayString* arrstrluc;
-    //arrstrluc->Add(lucia);
-
-    //m_lb->Append(wxT(lucia));
-    //wxArrayString* arrstrluc = new wxArrayString{ "hi", "hello", "wow" };
-
-    //m_lb->SetFirstItem(lucia);
-
-    //m_lb->Append(wxT("abcdef"));
-
-    //m_lb->InsertItems();
-
-    //InsertItems (const wxArrayString &items, unsigned int pos)
-
-
-    m_lb->Append("test");
+    m_lb->Append("Project Manager");
+    m_lb->Append("Scrum Leader");
+    m_lb->Append("Coder");
+    m_lb->Append("Data Scientist");
+    m_lb->Append("System Architect");
+    m_lb->Append("Computer Engineer");
+    m_lb->Append("Computer Scientist");
+    m_lb->Append("Computer Engineer");
+    m_lb->Append("System Administrator");
+    m_lb->Append("Web Developer");
+    m_lb->Append("App Developer");
+    m_lb->Append("Algorithm Developer");
 
 
 
